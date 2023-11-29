@@ -37,11 +37,10 @@ function App() {
             <p>Conteudo do artigo 3.....</p>
           </article>
         </section>
-
-        <footer>
-          <h2>Rodapé da aplicação</h2>
-        </footer>
       </main>
+      <footer>
+        <h2>Rodapé da aplicação</h2>
+      </footer>
     </>
   );
 }
