@@ -5,3 +5,11 @@
 .sombra {
   text-shadow: rgb(255, 79, 255) 2px 2px 5px;
 }
+
+hr {
+  height: 4px;
+  border: none;
+  background-color: brown;
+  width: 50%;
+  margin: auto;
+}
