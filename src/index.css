@@ -20,3 +20,12 @@ html {
 .sombra {
   box-shadow: green 0 0 10px;
 }
+
+.destaque-texto {
+  text-transform: uppercase;
+  color: green;
+}
+
+.centralizar {
+  text-align: center;
+}

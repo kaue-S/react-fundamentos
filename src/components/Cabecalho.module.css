@@ -13,3 +13,10 @@ hr {
   width: 50%;
   margin: auto;
 }
+
+.destaque-texto {
+  background-color: rgb(12, 14, 20);
+  padding: 4px;
+  border-radius: 4px;
+  color: red;
+}

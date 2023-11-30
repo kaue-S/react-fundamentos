@@ -7,9 +7,13 @@ function Cabecalho() {
   return (
     <header>
       <h1>
-        Olá <span className={estilo.sombra}>React</span>
+        <span className={estilo["destaque-texto"]}>Olá</span>
+        <span className={estilo.sombra}>React</span>
       </h1>
       <hr />
+      <p className={`${estilo["destaque-texto"]} centralizar`}>
+        Classes combinadas
+      </p>
       <Menu />
     </header>
   );
