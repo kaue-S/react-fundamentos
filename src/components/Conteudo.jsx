@@ -1,3 +1,5 @@
+import Artigo from "./artigo";
+
 function Conteudo() {
   return (
     <main>
@@ -9,20 +11,9 @@ function Conteudo() {
           nostrum velit dignissimos odio architecto!
         </p>
 
-        <article>
-          <h3>Artigo 1</h3>
-          <p>Conteudo do artigo 1.....</p>
-        </article>
-
-        <article>
-          <h3>Artigo 2</h3>
-          <p>Conteudo do artigo 2.....</p>
-        </article>
-
-        <article>
-          <h3>Artigo 3</h3>
-          <p>Conteudo do artigo 3.....</p>
-        </article>
+        <Artigo />
+        <Artigo />
+        <Artigo />
       </section>
     </main>
   );
