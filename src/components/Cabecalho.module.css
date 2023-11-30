@@ -1,22 +1,22 @@
-/* Cabecalho.css */
-
-/*  sombra de texto  */
-
-.sombra {
-  text-shadow: rgb(255, 79, 255) 2px 2px 5px;
+.centralizar {
+  text-align: center;
 }
 
-hr {
-  height: 4px;
-  border: none;
-  background-color: brown;
-  width: 50%;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   margin: auto;
+  background-color: aqua;
+  padding: 15px;
 }
 
-.destaque-texto {
-  background-color: rgb(12, 14, 20);
-  padding: 4px;
-  border-radius: 4px;
-  color: red;
+.conteudo {
+  text-align: center;
+}
+
+.artigo {
+  display: flex;
+  background-color: orange;
+  justify-content: space-around;
 }

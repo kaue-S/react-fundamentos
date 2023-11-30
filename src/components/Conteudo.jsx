@@ -1,11 +1,10 @@
 import Artigo from "./artigo";
+import estilo from "./cabecalho.module.css";
 
 function Conteudo() {
   return (
     <main>
-      <h2>Teste</h2>
-      <hr />
-      <section>
+      <section className={estilo.centralizar}>
         <h2>Conteúdo da aplicação</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic
