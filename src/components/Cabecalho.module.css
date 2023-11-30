@@ -1,0 +1,7 @@
+/* Cabecalho.css */
+
+/*  sombra de texto  */
+
+.sombra {
+  text-shadow: rgb(255, 79, 255) 2px 2px 5px;
+}
