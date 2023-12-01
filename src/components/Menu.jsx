@@ -9,11 +9,11 @@ const StyledMenu = styled.nav`
   a {
     color: white;
     text-decoration: none;
-  }
 
-  a:hover {
-    background-color: red;
-    color: black;
+    &:hover {
+      background-color: red;
+      color: black;
+    }
   }
 `;
 
