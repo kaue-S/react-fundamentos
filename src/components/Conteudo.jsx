@@ -3,7 +3,6 @@ import Artigo from "./artigo";
 function Conteudo() {
   return (
     <main>
-      <h2>Teste</h2>
       <hr />
       <section>
         <h2>Conteúdo da aplicação</h2>

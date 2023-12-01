@@ -6,14 +6,10 @@ import estilo from "./cabecalho.module.css";
 function Cabecalho() {
   return (
     <header>
-      <h1>
+      <h1 className={"centralizar"}>
         <span className={estilo["destaque-texto"]}>Olá</span>
         <span className={estilo.sombra}>React</span>
       </h1>
-      <hr />
-      <p className={`${estilo["destaque-texto"]} centralizar`}>
-        Classes combinadas
-      </p>
       <Menu />
     </header>
   );

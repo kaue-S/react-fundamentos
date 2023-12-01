@@ -29,3 +29,15 @@ html {
 .centralizar {
   text-align: center;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
