@@ -25,18 +25,19 @@ const StyledArtigo = styled.article`
 `;
 
 
-function Artigo( props ) {
+function Artigo( {imagem, icone, titulo, descricao, data, children} ) {
   
   return (
     <>
       <StyledArtigo>
         <div className="centralizar">
           
-          <img src={props.imagem} alt="" />
+          <img src={imagem} alt="" />
         </div>
-        <h3><span>{props.icone}</span>{props.titulo}</h3>
-        <p>{props.descricao}</p>
-        <time>Data de lancamento: {props.data}</time>
+        <h3><span>{icone}</span>{titulo}</h3>
+        <p>{descricao}</p>
+        <time>Data de lancamento: {data}</time>
+        {children}
       </StyledArtigo>
     </>
   );
