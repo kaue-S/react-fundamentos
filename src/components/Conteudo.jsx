@@ -41,7 +41,7 @@ function Conteudo() {
 
         <StyledDiv>
           {cursos.map( (curso) => {
-            
+              
             return  <Artigo/>
           })}
          

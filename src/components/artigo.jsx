@@ -26,7 +26,7 @@ const StyledArtigo = styled.article`
 `;
 
 
-function Artigo(  ) {
+function Artigo( curso ) {
 
 
   return (
