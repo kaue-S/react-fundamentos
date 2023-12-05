@@ -11,7 +11,6 @@ const StyledArtigo = styled.article`
     color: #043c61;
     border-bottom: 3px solid white;
     padding-bottom: 5px;
-    width: 90px;
     text-align: center;
   }
 
@@ -20,12 +19,15 @@ const StyledArtigo = styled.article`
   }
 `;
 
-function Artigo() {
+
+function Artigo( props ) {
+  
   return (
     <>
       <StyledArtigo>
-        <h3>Artigo 1</h3>
-        <p>Conteudo do artigo 1.....</p>
+        <h3><span>{props.icone}</span>{props.titulo}</h3>
+        <p>{props.descricao}</p>
+        <time>Data de lancamento: {props.data}</time>
       </StyledArtigo>
     </>
   );

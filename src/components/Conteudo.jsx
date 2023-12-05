@@ -21,7 +21,12 @@ const StyledDiv = styled.div`
   }
 `;
 
+
+
 function Conteudo() {
+
+  const data = ["01/01/2000", "31/12/1950", "15/07/2019"];
+
   return (
     <StyledConteudo>
       <h2>Teste</h2>
@@ -33,13 +38,13 @@ function Conteudo() {
         </p>
 
         <StyledDiv>
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo icone="🎬" titulo="Senhor dos Anéis" descricao="Livro criado por J.R.R. Tokien" data={data[0]}/>
+          <Artigo icone="🎩" titulo="Game of Thrones" descricao="Aventura maluca com gente sempre morrendo" data={data[1]}/>
+          <Artigo icone="🎡" titulo="HTML5 e CSS3" descricao="Fonte de estudos para quem quer começar no front end" data={data[2]}/>
         </StyledDiv>
       </section>
     </StyledConteudo>
   );
 }
 
-export default Conteudo;
+export default Conteudo; 
