@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import cursos from "../../api/cursos";
+import cursos from "../api/cursos";
 
 
 const StyledArtigo = styled.article`
@@ -8,6 +8,8 @@ const StyledArtigo = styled.article`
   margin: 0.5rem 0;
   border-radius: 24px;
   box-shadow: blue 0 0 5px inset;
+  width: 32%;
+
 
   h3 {
     color: #043c61;
@@ -26,15 +28,23 @@ const StyledArtigo = styled.article`
 `;
 
 
-function Artigo( curso ) {
-
+function Artigo( props ) {
+ const formataPreco = (valor) =>{
+  return valor.toLocaleString("pt-br", {
+    style: "currency",
+    currency: "BRL",
+  })
+ };
 
   return (
     <>
       <StyledArtigo>
-        <h3>Categoria</h3>
-        <p></p>
-        <p>Preco do curso</p>
+        <h3>{props.titulo}</h3>
+        <div className="centralizar">
+        <p>{props.categoria}</p>
+        <p>{formataPreco(props.preco)}</p>
+
+        </div>
 
       </StyledArtigo>
     </>
