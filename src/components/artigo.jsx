@@ -25,19 +25,15 @@ const StyledArtigo = styled.article`
 `;
 
 
-function Artigo( {imagem, icone, titulo, descricao, data, children} ) {
+function Artigo(  ) {
   
   return (
     <>
       <StyledArtigo>
-        <div className="centralizar">
-          
-          <img src={imagem} alt="" />
-        </div>
-        <h3><span>{icone}</span>{titulo}</h3>
-        <p>{descricao}</p>
-        <time>Data de lancamento: {data}</time>
-        {children}
+        <h3>Categoria</h3>
+        <p>Nome do curso</p>
+        <p>Preco do curso</p>
+
       </StyledArtigo>
     </>
   );
