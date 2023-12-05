@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import cursos from "../../api/cursos";
 
 
 const StyledArtigo = styled.article`
@@ -26,12 +27,13 @@ const StyledArtigo = styled.article`
 
 
 function Artigo(  ) {
-  
+
+
   return (
     <>
       <StyledArtigo>
         <h3>Categoria</h3>
-        <p>Nome do curso</p>
+        <p></p>
         <p>Preco do curso</p>
 
       </StyledArtigo>
