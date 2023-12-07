@@ -7,7 +7,7 @@ import { useState } from "react";
 // importando imagens
 
 
-const StyledConteudo = styled.main`
+const StyledCursos = styled.main`
   
 
   .filtros{
@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-function Conteudo() {
+function Cursos() {
   //criando um gerenciador de state para mudança/filtro de categorias. Inicialmente, começa como null pois ainda não temos uma escolha de categoria
   const [categoria, setCategoria] = useState(null);
 
@@ -68,7 +68,7 @@ function Conteudo() {
   const quantidade = cursosFiltrados.length;
 
   return (
-    <StyledConteudo>
+    <StyledCursos>
       <section>
         <div className="centralizar">
         <h2>Conteúdo da aplicação</h2>
@@ -119,8 +119,8 @@ function Conteudo() {
           
         </StyledDiv>
       </section>
-    </StyledConteudo>
+    </StyledCursos>
   );
 }
 
-export default Conteudo; 
+export default Cursos; 
