@@ -31,13 +31,19 @@ const StyledConteudo = styled.main`
   .filtros button{
     margin: 0.5rem;
     font-size: 1.1rem;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .centralizar{
+    text-align: center;
   }
 `;
 
 const StyledDiv = styled.div`
   @media (min-width: 650px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     /* width: 20%; */
   }
@@ -55,20 +61,28 @@ function Conteudo() {
     setCategoria(categoriaEscolhida);
   };
 
+  //Gerando um novo array de cursos filtrados
+  const cursosFiltrados = cursos.filter( (curso) => {
+    return curso.categoria === categoria || categoria === null;
+  });
+
   return (
     <StyledConteudo>
       <section>
+        <div className="centralizar">
         <h2>Conteúdo da aplicação</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic
           nostrum velit dignissimos odio architecto!
         </p>
 
+        </div>
+
         <div className="filtros">
           <p>
             <b>Filtrar por: </b><button onClick={aplicarFiltro}>Front-End</button>
-            <b>Filtrar por: </b><button onClick={aplicarFiltro}>Back-End</button>
-            <b>Filtrar por: </b><button onClick={aplicarFiltro}>Design</button>
+            <b></b><button onClick={aplicarFiltro}>Back-End</button>
+            <b></b><button onClick={aplicarFiltro}>Design</button>
           </p>
 
           { categoria && <p>Você escolheu: {categoria}</p> }
@@ -77,7 +91,7 @@ function Conteudo() {
 
 
         <StyledDiv>
-          {cursos.map( curso => {
+          {cursosFiltrados.map( curso => {
               
             return  <Artigo key={curso.id} titulo={curso.titulo} categoria={curso.categoria} preco={curso.preco} />
           })}
