@@ -6,6 +6,10 @@ A renderização ocorre na seguinte sequência:
 
 inxex.html <- main.jsx <- App.jsx
 
+## 11 navegação usando rotas
+O react suporta a navegação/links como single page application (SPA) usando uma biblioteca adicional chamada **react router dom**.
+`npm react-router-dom`
+
 ## 06- props
 
 São parâmetros com valores passados para os componentes React, normalmente usados para injeção de dados dinâmicos. As `props` funcionam como objetos, e cada `prop` criada por você passa a ter propriedades deste objeto. 
