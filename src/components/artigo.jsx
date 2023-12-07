@@ -7,8 +7,8 @@ const StyledArtigo = styled.article`
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 24px;
-  box-shadow: blue 0 0 5px inset;
-  width: 32%;
+  box-shadow: blue 0 0 5px inset; 
+  width: 30%; 
 
 
   h3 {

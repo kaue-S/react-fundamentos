@@ -15,10 +15,11 @@ const StyledMenu = styled.nav`
     justify-content: center;
     align-items: center;
     transition: transform 100ms;
-    border-radius: 24px;
+    border-radius: 10px;
 
     &:hover {
-      background-color: red;
+      background-color: #4747d3;  
+      /* border: 2px solid white; */
       color: black;
       transform: scale(1.05);
     }
