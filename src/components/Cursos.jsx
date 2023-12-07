@@ -7,7 +7,7 @@ import { useState } from "react";
 // importando imagens
 
 
-const StyledCursos = styled.main`
+const StyledCursos = styled.section`
   
 
   .filtros{
