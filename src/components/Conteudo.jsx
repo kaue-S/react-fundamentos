@@ -43,6 +43,7 @@ const StyledConteudo = styled.main`
 const StyledDiv = styled.div`
   @media (min-width: 650px) {
     display: flex;
+   
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* width: 20%; */
@@ -66,6 +67,11 @@ function Conteudo() {
     return curso.categoria === categoria || categoria === null;
   });
 
+  const limparFiltro = () => {
+    setCategoria(null);
+    
+  }
+
   return (
     <StyledConteudo>
       <section>
@@ -80,14 +86,22 @@ function Conteudo() {
 
         <div className="filtros">
           <p>
-            <b>Filtrar por: </b><button onClick={aplicarFiltro}>Front-End</button>
-            <b></b><button onClick={aplicarFiltro}>Back-End</button>
-            <b></b><button onClick={aplicarFiltro}>Design</button>
+            <b>Filtrar por: </b>
+            <button onClick={aplicarFiltro}>Front-End</button>
+            <button onClick={aplicarFiltro}>Back-End</button>
+            <button onClick={aplicarFiltro}>Design</button>
+            <button onClick={aplicarFiltro}>Mobile</button>
+            <button onClick={aplicarFiltro}>Musica</button>
+            <button onClick={aplicarFiltro}>Gastronomia</button>
+            
+            <button onClick={limparFiltro}>🧹 limpar filtros</button>
           </p>
 
           { categoria && <p>Você escolheu: {categoria}</p> }
 
         </div>
+
+
 
 
         <StyledDiv>

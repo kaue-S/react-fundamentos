@@ -6,7 +6,7 @@ const StyledArtigo = styled.article`
   background-color: #528dc0;
   padding: 1rem;
   margin: 0.5rem 0;
-  border-radius: 24px;
+  border-radius: 5px;
   box-shadow: blue 0 0 5px inset; 
   width: 30%; 
 
