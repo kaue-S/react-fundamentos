@@ -72,6 +72,10 @@ function Conteudo() {
     
   }
 
+
+  //Guardando a quantidade de cursos
+  const quantidade = cursosFiltrados.length;
+
   return (
     <StyledConteudo>
       <section>
@@ -93,11 +97,20 @@ function Conteudo() {
             <button onClick={aplicarFiltro}>Mobile</button>
             <button onClick={aplicarFiltro}>Musica</button>
             <button onClick={aplicarFiltro}>Gastronomia</button>
-            
-            <button onClick={limparFiltro}>🧹 limpar filtros</button>
+
+            {categoria && (
+              <button onClick={limparFiltro}>🧹 limpar filtros</button>
+            )}
+
           </p>
 
-          { categoria && <p>Você escolheu: {categoria}</p> }
+          { categoria && (<p>Você escolheu: <b>{categoria}</b></p> )}
+
+          { quantidade === 0 &&
+            <p style={{color: "red", textAlign: "center"}}>Não há noticias desta categoria</p>
+          }
+          
+          <p>Cursos encontrados: <b>{quantidade}</b></p>
 
         </div>
 
