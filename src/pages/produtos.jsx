@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 function Produtos(){
+// o state "produtos" é iniciado com um array vazio. posteriormente (após o carregamento dos dados da api), ele será preenchido com os objetos/produtos
+
+
+    const [produtos, setProdutos] = useState([]);
 
     const carregarDados = async () => {
         try {
@@ -11,7 +17,7 @@ function Produtos(){
     }
 
     carregarDados();
-    
+
     return <h2>Produtos</h2>;
     
 }
