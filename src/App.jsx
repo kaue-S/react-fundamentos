@@ -5,6 +5,7 @@ import Contato from "./pages/contato";
 import Rodape from "./components/Rodape";
 import Container from "./components/container";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetalhesProduto from "./pages/DetalhesProduto";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route Component={Home} exact path="/" />
           <Route Component={Produtos} path="/produtos" />
+          <Route Component={DetalhesProduto} path="/produtos/:id" />
           <Route Component={Contato} path="/Contato" />
         </Routes>
       </Container>
