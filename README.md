@@ -1,5 +1,13 @@
 # dundamentos de React 
 
+## gerenciamento de efeitos colaterais
+
+## 12 gerenciamento de efeitos colaterais
+
+`efeitos colaterais` no react são operações que não tem ligação direta com a renderização do componente, como por exemplo, solicitações de API e manipulação de eventos.
+
+Usamos o **hook** `useEffect` para garantir que esses efeitos colaterais ocorram no momento adequado do cilco de vida do componente, evitando execuções repetitivas e problemas de carregamento e desempenho.
+
 ## Informações gerais
 
 A renderização ocorre na seguinte sequência: 
