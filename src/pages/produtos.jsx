@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import imagemLoading from "../assets/loading.svg";
 
 function Produtos() {
   // o state "produtos" é iniciado com um array vazio. posteriormente (após o carregamento dos dados da api), ele será preenchido com os objetos/produtos
@@ -37,7 +38,9 @@ function Produtos() {
       <h2>Produtos</h2>
 
       {loading ? (
-        <p>Carregando...</p>
+        <p style={{textAlign: "center"}}>
+          <img src={imagemLoading} alt="" />
+        </p>
       ) : (
         produtos.map((produto) => {
           return (
