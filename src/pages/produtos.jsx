@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import imagemLoading from "../assets/loading.svg";
+import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
 
 function Produtos() {
@@ -39,9 +39,7 @@ function Produtos() {
       <h2>Produtos</h2>
 
       {loading ? (
-        <p style={{textAlign: "center"}}>
-          <img src={imagemLoading} alt="" />
-        </p>
+        <Loading />
       ) : (
         produtos.map((produto) => {
           return (
